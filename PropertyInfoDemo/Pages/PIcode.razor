@@ -1,0 +1,8 @@
+﻿@page "/picode"
+
+@inject ProcessViewModel pProcessVM
+
+<h1>PI code</h1>
+
+<PICodeComponent pPropertyAsParameter="@(typeof(ProcessViewModel).GetProperty("pSomeViewModelProperty"))" 
+                 pViewModel="@pProcessVM" />

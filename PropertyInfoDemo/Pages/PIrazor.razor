@@ -1,0 +1,9 @@
+﻿@page "/pirazor"
+
+@using PropertyInfoDemo.Data
+@inject ProcessViewModel pProcessVM
+
+<h1>PI razor</h1>
+
+<PIRazorComponent pPropertyAsParameter="@(typeof(ProcessViewModel).GetProperty("pSomeViewModelProperty"))"
+                  pViewModel="@pProcessVM" />
